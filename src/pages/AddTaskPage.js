@@ -14,7 +14,7 @@ const AddTaskPage = ({ addTask }) => {
   return (
     <div>
       <h1>Add Task</h1>
-      <TaskForm addNewTask={handleAddTask} /> {/* Use addNewTask prop */}
+      <TaskForm addTask={handleAddTask} /> {/* Use addTask prop */}
     </div>
   );
 };
