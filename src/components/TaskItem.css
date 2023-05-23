@@ -1,0 +1,48 @@
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+  }
+  
+  .task-item-view {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .task-item-editing {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .task-item-title {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .task-item-title.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .task-item-buttons {
+    display: flex;
+  }
+  
+  .task-item-button-complete,
+  .task-item-button-edit,
+  .task-item-button-delete {
+    margin-left: 5px;
+  }
+  
+  .task-item-button-save,
+  .task-item-button-cancel {
+    margin-right: 5px;
+  }
+  
+  /* Add any additional styling as per your preference */
+  
+  

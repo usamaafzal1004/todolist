@@ -1,0 +1,150 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  background: linear-gradient(to right, #FFCDB2, #A8E6CE);
+  font-family: 'Praise', cursive;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  font-family: 'Praise', cursive;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Praise', cursive;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Praise', cursive;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-item span {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.task-item button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-item button:hover {
+  background-color: #d32f2f;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.filter-btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn.active {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input[type="text"] {
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .task-item button {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
